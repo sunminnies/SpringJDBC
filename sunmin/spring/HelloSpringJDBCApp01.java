@@ -42,7 +42,20 @@ public class HelloSpringJDBCApp01 {
 		SungJukService sjsrv = (SungJukService) ctx.getBean("sjsrv");
 		
 		// 성적 데이터 생성 후 디비에 저장
-		sjsrv.newSungJuk();
+		// sjsrv.newSungJuk();
+		
+		// 성적 데이터 조회
+		// sjsrv.readAllSungJuk();
+		
+		// 성적 데이터 상세조회
+		// sjsrv.readOneSungJuk(2);
+		
+		// 성적 데이터 수정
+		// sjsrv.modifySungJuk();
+		
+		// 성적 데이터 삭제
+		sjsrv.removeSungJuk();
+		
 
 	}
 
